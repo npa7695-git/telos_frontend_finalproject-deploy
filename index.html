@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Front-end 4 Designer Course</title>
+    <link href="output.css" rel="stylesheet"> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        function toggleMenu() {
+            document.getElementById("mobiMenu").classList.toggle("hidden");
+            document.getElementById("mobiMenu").classList.add("animate__animated", "animate__fadeIn");
+            document.getElementById("mobiMenu").classList.toggle("flex");
+        }
+    </script>
+</head>
+<body>
+    <div class="content w-full flex flex-col items-center justify-center">
+        <div class="nav w-full h-10 lg:h-18 bg-white flex justify-between items-center p-4 lg:px-10 wow animate__animated animate__fadeInDown">
+            <div class="content flex flex-1 items-center gap-8">
+                <img src="./images/logo.png" alt="" class="logo">
+                <div class="menu flex justify-between items-center gap-8">
+                    <div class="hidden lg:block">About</div>
+                    <div class="hidden lg:block">Product</div>
+                    <div class="hidden lg:block">Pricing</div>
+                    <div class="hidden lg:block">Blog</div>
+                    <div class="hidden lg:block">Job</div>
+                    <div class="hidden lg:flex justify-center gap-1"> <span>More</span><img src="./images/chevron-down.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="socialbtn flex justify-center items-center gap-3">
+                <img src="./images/Google Play Badge.png" alt="" class="hidden lg:block">
+                <img src="./images/App Store Badge.png" alt="" class="hidden lg:block">
+                <img src="./images/menu-01.png" alt=""class="w-6 h-6 block lg:hidden" onclick="toggleMenu()"></div>
+        </div>
+        <div id="mobiMenu" class="overlayfixed w-full h-full bg-black bg-opacity-70 absolute top-0 left-0 z-10 hidden justify-end">
+            <div class="bg-white w-[300px] h-full flex flex-col justify-between items-start p-6 ">
+                <div class="menu flex flex-col items-start gap-6">
+                    <img src="./images/menu-01.png" alt=""class="w-6 h-6" onclick="toggleMenu()">
+                    <div>About</div>
+                    <div>Product</div>
+                    <div>Pricing</div>
+                    <div>Blog</div>
+                    <div>Job</div>
+                    <div class="flex justify-center gap-1">
+                        <span>More</span>
+                        <img src="./images/chevron-down.svg" alt=""></div>
+                </div>
+                <div class="socialbtn flex flex-col justify-center items-center gap-3">
+                    <img src="./images/Google Play Badge.png" alt="">
+                    <img src="./images/App Store Badge.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="hero bg-white flex flex-col items-center justify-between overflow-hidden w-full h-[650px] md:h-[800px] lg:h-[800px]">
+            <div class="content flex flex-col items-center gap-8 px-8 my-24 w-full
+            md:w-[676px] lg:w-full lg:px-10 wow animate__animated animate__fadeInDown">
+                <div class="text font-extrabold text-center text-[32px] leading-[40px]
+                sm:text-[48px] sm:leading-[56px]
+                md:text-[58px] md:leading-[72px]
+                lg:text-[72px] lg:leading-[98px]">Track your product sales from anywhere, anytime.</div>
+                <div class="cta button flex items-center justify-end py-3 px-8 bg-purple-500 text-white rounded-md hover:bg-purple-600 cursor-pointer">Start Selling</div>
+            </div>
+            <div class="img w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[400px] overflow-hidden relative wow animate__animated animate__fadeInUp">
+                <div class="circle absolute left-1/2 -translate-x-1/2
+                  w-[600px] h-[600px]
+                  sm:w-[640px] sm:h-[640px] sm:-top-[-50%]
+                  md:w-[780px] md:h-[780px]
+                  lg:w-[1200px] lg:h-[1200px]
+                  bg-purple-400 rounded-full -top-[-75%]">
+                </div>
+                  <div class="phone mt-24 bg-transparent absolute top-[-45%] left-[50%] transform -translate-x-1/2 flex items-center justify-center
+                  w-[200px] h-[300px]
+                  sm:top-[-15%]
+                  md:w-[200px] md:h-[400px] md:top-0
+                  lg:w-full lg:h-full">
+                    <img src="./images/iPhone X.png" alt="" class=" w-full h-full object-contain">
+                </div>
+             </div>
+                
+            </div>
+        <div class="feature w-full bg-white flex flex-col items-start justify-center px-4 sm:px-6 lg:px-10 gap-8 lg:gap-12 my-16">
+            <div class="content flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 wow animate__animated animate__fadeInUp">
+                <div class="header font-extrabold text-[32px] lg:text[36px] leading-[40px] lg:leading-[48px] text-center lg:text-left">Discover the latest trends with Landify!</div>
+                <div class="description font-normal text-[16px] lg:text-[18px] leading-[24px] lg:leading-[32px] text-center lg:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis scelerisque at quam congue posuere libero in sit quam. Consequat, scelerisque non tincidunt sit lectus senectus.</div>
+            </div>
+            <img src="./images/Cover Image.png" alt="" class=" rounded-lg w-full h:[200px] lg:h-[400px] object-cover wow animate__animated animate__fadeInUp">
+        </div>
+        <div class="testimonial w-full bg-gray-100 flex flex-col items-center justify-center p-6 gap-10">
+            <div class="content flex flex-col gap-2 animate__animated animate__fadeInUp">
+                <div class="text font-extrabold text-[32px] lg:text[36px] leading-[40px] lg:leading-[48px] text-center">Our Clients Speak</div>
+                <div class="description text-[16px] lg:text-[18px] leading-[24px] lg:leading-[32px] text-center">We have been working with clients around the world</div>
+            </div>
+            <div class="client w-full flex flex-col lg:flex-row justify-between items-start gap-[30px] wow animate__animated animate__fadeInUp">
+                <div class="card w-full lg:w-[350px] h-full flex flex-col items-center justify-between gap-8">
+                    <div class="content flex flex-col items-center justify-center rounded-lg bg-white gap-2 p-10 mb-2 relative">
+                        <div><h2 class="font-semibold text-[24px] leading-[32px] text-center">Efficient Collaborating</h2></div>
+                        <div><p class="text font-normal text-[14px] leading-[24px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p></div>
+                        <div class=" triangle w-6 h-6 rounded-sm bg-white rotate-45 left-1/2 -translate-x-1/2 mx-auto absolute bottom-[-20px] mb-2"></div>
+                    </div>
+                    <div class="clientdetails flex flex-col items-center gap-2">
+                        <div class="avt w-14 h-14">
+                            <img src="./images/e16c321a97e1043d3d82e3be6cdf905925a9cd94.png" alt="" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <div class="persondetail">
+                            <div class="name font-semibold text-[18px] leading-[24px] text-center">John Doe</div>
+                            <div class="title font-normal text-[14px] leading-[24px] text-center">CEO at ABC Corporation</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full lg:w-[350px] h-full flex flex-col items-center justify-between gap-8">
+                    <div class="content flex flex-col items-center justify-center rounded-lg bg-white h-full gap-2 p-10 mb-2 relative">
+                        <div><h2 class="font-semibold text-[24px] leading-[32px] text-center">Intuitive Design</h2></div>
+                        <div><p class="text font-normal text-[14px] leading-[24px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p></div>
+                        <div class=" triangle w-6 h-6 rounded-sm bg-white rotate-45 left-1/2 -translate-x-1/2 mx-auto absolute bottom-[-20px] mb-2"></div>
+                    </div>
+                    <div class="clientdetails flex flex-col items-center gap-2">
+                        <div class="avt w-14 h-14">
+                            <img src="./images/e16c321a97e1043d3d82e3be6cdf905925a9cd94.png" alt="" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <div class="persondetail">
+                            <div class="name font-semibold text-[18px] leading-[24px] text-center">John Doe</div>
+                            <div class="title font-normal text-[14px] leading-[24px] text-center">CEO at ABC Corporation</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full lg:w-[350px] h-full flex flex-col items-center justify-between gap-8">
+                    <div class="content flex flex-col items-center justify-center rounded-lg bg-white h-full gap-2 p-10 mb-2 relative">
+                        <div><h2 class="font-semibold text-[24px] leading-[32px] text-center">Mindblowing Service</h2></div>
+                        <div><p class="text font-normal text-[14px] leading-[24px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.</p></div>
+                        <div class=" triangle w-6 h-6 rounded-sm bg-white rotate-45 left-1/2 -translate-x-1/2 mx-auto absolute bottom-[-20px] mb-2"></div>
+                    </div>
+                    <div class="clientdetails flex flex-col items-center gap-2">
+                        <div class="avt w-14 h-14">
+                            <img src="./images/e16c321a97e1043d3d82e3be6cdf905925a9cd94.png" alt="" class="w-full h-full rounded-full object-cover">
+                        </div>
+                        <div class="persondetail">
+                            <div class="name font-semibold text-[18px] leading-[24px] text-center">John Doe</div>
+                            <div class="title font-normal text-[14px] leading-[24px] text-center">CEO at ABC Corporation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider flex w-full items-center justify-center gap-3 h-[14px]">
+                <div class="w-2 h-2 bg-teal-400 rounded-full"></div>
+                <div class="w-[14px] h-[14px] border-[3px] bg-gray-100 border-teal-400 rounded-full"></div>
+                <div class="w-2 h-2 bg-teal-400 rounded-full"></div>
+            </div>
+        </div>
+        <footer class="w-full bg-white p-8 lg:p-10 flex flex-col md:flex-row justify-between items-center">
+                <div class="gap-2 text-center md:text-left animate__animated animate__fadeInUp">
+                    <h2 class="font-semibold text-[16px]">Final Course Project</h2>
+                    <p class="text-gray-500 text-[16px]">[Telos Frontend_29_03-2026]</p>
+                </div>
+                <div class="gap-2 text-center md:text-right animate__animated animate__fadeInUp">
+                        <p class="text-[16px] text-gray-500">Instructor: Lễ Nguyễn</p>
+                        <p class="text-[16px] text-gray-500">Student: Nguyễn Phương Anh</p>
+                    </div>
+        </footer>
+    </div>
+</body>
+</html>
